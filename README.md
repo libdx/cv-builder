@@ -10,6 +10,20 @@ It demonstrates Python, Django, FastAPI, TypeScript, React, PostgreSQL, Redis,
 cloud delivery, and AI-assisted engineering. Companies, dates, education,
 contacts, and evidence notes are sample content. See [sample data](docs/sample-data.md).
 
+## Sample CV preview
+
+Rendered from the fictional Joe Doe employment sample. The generator produces a
+self-contained HTML preview, an A4 PDF, and an editable Word document.
+
+![First page of Joe Doe's fictional senior software engineer CV](docs/images/joe-doe-employment-page-1.png)
+
+<details>
+<summary>View the second page</summary>
+
+![Second page of Joe Doe's fictional senior software engineer CV](docs/images/joe-doe-employment-page-2.png)
+
+</details>
+
 ## Quick start
 
 Run these commands from the repository root, using Python 3.13:
