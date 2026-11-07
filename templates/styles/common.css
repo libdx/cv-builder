@@ -1,0 +1,75 @@
+/* common.css — typography, colors, and base element styling */
+
+:root {
+  --color-text: #2b2b2b;
+  --color-text-muted: #7a7a7a;
+  --color-heading: #1f1f1f;
+  --color-section: #8c8c8c;
+  --color-rule: #d9d9d9;
+  --color-accent: #3a7a7a;
+  --color-timeline: #cfcfcf;
+
+  --font-body: "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
+
+  --fs-name: 30px;
+  --fs-title: 12px;
+  --fs-section: 16px;
+  --fs-body: 10.5px;
+  --fs-small: 9.5px;
+
+  --space-xs: 4px;
+  --space-sm: 7px;
+  --space-md: 12px;
+  --space-lg: 14px;
+  --space-xl: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.42;
+  color: var(--color-text);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Section headings (CONTACT, SKILLS, WORK EXPERIENCE, ...) */
+.section-title {
+  font-size: var(--fs-section);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-section);
+  margin-bottom: var(--space-md);
+}
+
+/* Sub-headings inside sidebar sections (TECHNICAL, PROFESSIONAL, ...) */
+.subsection-title {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-heading);
+  margin-bottom: var(--space-xs);
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--color-rule);
+  margin: var(--space-lg) 0;
+}

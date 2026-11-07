@@ -1,0 +1,9 @@
+{% from "components/_macros.html.jinja2" import job_entry %}
+<section class="cv-section">
+  <h2 class="section-title">Work Experience</h2>
+  <ul class="experience-list">
+    {% for job in experience %}
+    {{ job_entry(job) }}
+    {% endfor %}
+  </ul>
+</section>

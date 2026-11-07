@@ -1,0 +1,88 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+technical_skill_groups:
+- id: skill-group.backend
+  state: verified
+  label: Backend
+  items:
+  - Python
+  - Django
+  - FastAPI
+  - Celery
+  - REST
+- id: skill-group.cloud-delivery
+  state: verified
+  label: Cloud & delivery
+  items:
+  - AWS
+  - GCP
+  - Azure
+  - Kubernetes
+  - Docker
+  - CI/CD
+  - CircleCI
+  - GitLab CI
+  - Linux
+  - Bash
+- id: skill-group.data
+  state: verified
+  label: Data
+  items:
+  - PostgreSQL
+  - MySQL
+  - MS SQL
+  - Redis
+  - Elasticsearch
+- id: skill-group.frontend
+  state: verified
+  label: Frontend
+  items:
+  - TypeScript
+  - React
+  - Angular
+- id: skill-group.ai-development
+  state: verified
+  label: AI-assisted development
+  items:
+  - Codex
+  - Claude Code
+  - Cursor
+capabilities:
+- id: capability.backend-architecture
+  state: verified
+  label: Backend architecture
+- id: capability.technical-leadership
+  state: verified
+  label: Technical leadership
+- id: capability.product-delivery
+  state: verified
+  label: Product & delivery leadership
+- id: capability.team-building
+  state: verified
+  label: Team building & management
+- id: capability.cloud-platform-delivery
+  state: verified
+  label: Cloud & platform delivery
+- id: capability.ai-assisted-engineering
+  state: verified
+  label: AI-assisted software engineering
+languages:
+- id: language.english
+  state: verified
+  name: English
+  proficiency: Native
+- id: language.german
+  state: verified
+  name: German
+  proficiency: Professional working proficiency
+- id: language.french
+  state: verified
+  name: French
+  proficiency: Conversational
+- id: language.spanish
+  state: verified
+  name: Spanish
+  proficiency: Basic
+interests:
+- id: interest.reading
+  state: verified
+  label: Reading

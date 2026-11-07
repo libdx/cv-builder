@@ -1,0 +1,60 @@
+{# Reusable macros shared across variant templates #}
+
+{# Render a single work-experience entry on the timeline #}
+{% macro job_entry(job, show_relationship=false) %}
+<li class="job">
+  <div class="job__title">
+    {{ job.title }}
+  </div>
+  <div class="job__meta">
+    {{ job.company }}
+    {%- if show_relationship and job.relationship == "freelance_contract" %} &nbsp;|&nbsp; Independent Contractor{% endif %}
+    {%- if job.start_date and job.end_date %} &nbsp;|&nbsp; {{ job.start_date | year }} – {{ job.end_date | year }}{% endif %}
+  </div>
+  {% if job.technologies %}
+  <div class="job__tech">{{ job.technologies | join(', ') }}</div>
+  {% endif %}
+  {% if job.description %}
+  <p class="job__description">{{ job.description }}</p>
+  {% endif %}
+  {% if job.achievements %}
+  <ul class="job__achievements">
+    {% for achievement in job.achievements %}
+    <li>{{ achievement }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
+{% endmacro %}
+
+{# Render an undated client case study under the consultancy umbrella. #}
+{% macro engagement_entry(engagement) %}
+<li class="engagement">
+  <div class="engagement__context">{{ engagement.context }}</div>
+  {% if engagement.scope %}
+  <div class="engagement__label">Scope</div>
+  {% for statement in engagement.scope %}
+  <p class="engagement__text">{{ statement }}</p>
+  {% endfor %}
+  {% endif %}
+  {% if engagement.contributions %}
+  <div class="engagement__label">Contributions</div>
+  <div class="engagement__items">
+    {% for contribution in engagement.contributions %}
+    <p class="engagement__item">- {{ contribution }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if engagement.technologies %}
+  <div class="engagement__tech"><span class="engagement__label">Technologies</span> {{ engagement.technologies | join(', ') }}</div>
+  {% endif %}
+  {% if engagement.outcomes %}
+  <div class="engagement__label">Outcomes</div>
+  <div class="engagement__items">
+    {% for outcome in engagement.outcomes %}
+    <p class="engagement__item">- {{ outcome }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
+</li>
+{% endmacro %}

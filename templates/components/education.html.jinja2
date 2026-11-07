@@ -1,0 +1,12 @@
+{% if education %}
+<section class="cv-section">
+  <h2 class="section-title">Education</h2>
+  {% for edu in education %}
+  <div class="entry">
+    <div class="entry__primary">{{ edu.degree }}</div>
+    <div class="entry__secondary">{{ edu.institution }}</div>
+    <div class="entry__secondary">{{ edu.start_year }} – {{ edu.end_year }}</div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}

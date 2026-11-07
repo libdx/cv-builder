@@ -1,0 +1,9 @@
+{% for sidebar_section in sidebar %}
+<div
+  class="cv-sidebar-slot cv-sidebar-detail-{{ sidebar_section.detail }}{% if sidebar_section.placement == 'sidebar_continuation' %} cv-sidebar-continuation{% endif %}"
+  data-sidebar-section="{{ sidebar_section.id }}"
+  data-sidebar-detail="{{ sidebar_section.detail }}"
+>
+  {% include "components/" ~ sidebar_section.id ~ ".html.jinja2" %}
+</div>
+{% endfor %}

@@ -1,0 +1,11 @@
+{% if languages %}
+<section class="cv-section">
+  <h2 class="section-title">Languages</h2>
+  {% for lang in languages %}
+  <div class="entry">
+    <div class="entry__primary">{{ lang.name }}</div>
+    <div class="entry__secondary">{{ lang.proficiency }}</div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}

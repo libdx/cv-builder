@@ -1,0 +1,48 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+defaults:
+  contact:
+    representation: section
+    placement: sidebar_primary
+    detail: standard
+    order: 1
+  skills:
+    representation: section
+    placement: sidebar_primary
+    detail: standard
+    order: 2
+  education:
+    representation: section
+    placement: sidebar_primary
+    detail: standard
+    order: 3
+  languages:
+    representation: section
+    placement: sidebar_continuation
+    detail: standard
+    order: 1
+  interests:
+    representation: omitted
+    placement: sidebar_continuation
+    detail: compact
+    order: 2
+variants:
+  employment:
+    sections: {}
+  contracting:
+    extends: employment
+    sections: {}
+  freelance:
+    sections:
+      languages:
+        placement: sidebar_primary
+        order: 4
+editions:
+  freelance_concise:
+    variant: freelance
+    sections: {}
+  freelance_extended:
+    variant: freelance
+    sections:
+      languages:
+        placement: sidebar_continuation
+        order: 1

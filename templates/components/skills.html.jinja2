@@ -1,0 +1,19 @@
+<section class="cv-section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-group">
+    <h3 class="subsection-title">Technical</h3>
+    <ul class="skill-list">
+      {% for group in skills.technical %}
+      <li><span class="skill-category">{{ group.label }}:</span> {{ group["items"] | join(', ') }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="skill-group">
+    <h3 class="subsection-title">Capabilities</h3>
+    <ul class="skill-list">
+      {% for capability in skills.capabilities %}
+      <li>{{ capability }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

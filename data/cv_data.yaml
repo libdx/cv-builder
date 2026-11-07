@@ -1,0 +1,211 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+personal_info:
+  first_name: Joe
+  last_name: Doe
+  title: Senior Software Engineer
+  photo: assets/avatar.jpg
+contact:
+  phone: +1 202 555 0142
+  email: joe.doe@example.com
+  location: Example City, Remote
+  linkedin: https://example.com/joe-doe
+profile:
+  employment: Senior Software Engineer with 12+ years of experience building Python
+    services, REST APIs, and data-intensive applications. Works with Django, FastAPI,
+    PostgreSQL, Redis, AWS, and container-based delivery. Collaborates with product
+    teams, mentors engineers, and maintains reliable software through automated testing
+    and review.
+  contracting: Senior Software Engineer with 12+ years of experience building Python
+    services, REST APIs, and data-intensive applications. Works with Django, FastAPI,
+    PostgreSQL, Redis, AWS, and container-based delivery. Collaborates with product
+    teams, mentors engineers, and maintains reliable software through automated testing
+    and review.
+  freelance: Independent Backend Consultant helping product teams build reliable Python
+    APIs, data pipelines, and cloud services. Hands-on with Django, PostgreSQL, AWS,
+    and automated delivery, from technical discovery to implementation and support.
+sidebar:
+  technical_skill_groups:
+  - skill-group.backend
+  - skill-group.cloud-delivery
+  - skill-group.data
+  - skill-group.frontend
+  capabilities:
+  - capability.backend-architecture
+  - capability.technical-leadership
+  - capability.product-delivery
+  - capability.team-building
+  - capability.cloud-platform-delivery
+  languages:
+  - language.english
+  - language.german
+  interests: []
+education:
+- degree: BSc Computer Science
+  institution: Example University
+  start_year: 2010
+  end_year: 2014
+consultancy:
+  title: Independent Backend Consultant
+  start_date: 2023-04
+  end_date: present
+experience:
+- id: commerce
+  title: Senior Software Engineer
+  company: Example Commerce
+  company_anonymous: Commerce SaaS platform
+  industry: E-commerce
+  location: Remote
+  start_date: 2024-02
+  end_date: present
+  employment_type: full_time
+  relationship: freelance_contract
+  is_current: true
+  technologies:
+  - Python
+  - Django
+  - PostgreSQL
+  - Redis
+  - AWS
+  - Docker
+  - REST
+  summary_evidence_id: evidence.commerce.architecture-delivery
+  evidence_ids:
+  - evidence.commerce.python-backend
+  - evidence.commerce.rest-apis
+  - evidence.commerce.architecture-decisions
+  - evidence.commerce.cross-functional-leadership
+  - evidence.commerce.product-planning
+  - evidence.commerce.quality-practices
+- id: analytics
+  title: Senior Software Engineer
+  company: Example Analytics
+  company_anonymous: Reporting and analytics platform
+  industry: Analytics
+  location: Remote
+  start_date: 2023-04
+  end_date: 2024-01
+  employment_type: full_time
+  relationship: freelance_contract
+  is_current: false
+  technologies:
+  - Python
+  - AWS
+  - Docker
+  - CI/CD
+  summary_evidence_id: evidence.analytics.engineering-execution
+  evidence_ids:
+  - evidence.analytics.integrations
+  - evidence.analytics.cloud-delivery
+  - evidence.analytics.onboarding
+  - evidence.analytics.technical-design
+  - evidence.analytics.event-data
+- id: consulting
+  title: Senior Software Engineer
+  company: Example Consulting
+  company_anonymous: Software consultancy
+  industry: Consulting
+  location: Remote
+  start_date: 2020-06
+  end_date: 2023-03
+  employment_type: full_time
+  relationship: employment
+  is_current: false
+  technologies:
+  - Python
+  - Django
+  - PostgreSQL
+  - Redis
+  - AWS
+  - Docker
+  - REST
+  summary_evidence_id: evidence.consulting.enterprise-software
+  evidence_ids:
+  - evidence.consulting.backend-oriented-fullstack
+  - evidence.consulting.rest-apis
+  - evidence.consulting.cms-automation
+  - evidence.consulting.network-layer
+- id: workflow
+  title: Senior Software Engineer
+  company: Example Workflow
+  company_anonymous: Workflow SaaS product
+  industry: Workflow software
+  location: Remote
+  start_date: 2018-09
+  end_date: 2020-05
+  employment_type: full_time
+  relationship: employment
+  is_current: false
+  technologies:
+  - Python
+  - TypeScript
+  - React
+  - PostgreSQL
+  - REST
+  summary_evidence_id: evidence.workflow.startup-product
+  evidence_ids:
+  - evidence.workflow.filtering-system
+  - evidence.workflow.loading-cache
+- id: services
+  title: Software Engineer
+  company: Example Services
+  company_anonymous: Software services provider
+  industry: IT services
+  location: Remote
+  start_date: 2016-07
+  end_date: 2018-08
+  employment_type: full_time
+  relationship: employment
+  is_current: false
+  technologies:
+  - Python
+  - TypeScript
+  - React
+  - PostgreSQL
+  - REST
+  summary_evidence_id: evidence.services.client-requirements
+  evidence_ids:
+  - evidence.services.data-import
+  - evidence.services.access-control
+- id: learning_senior
+  title: Senior Software Engineer
+  company: Example Learning
+  company_anonymous: Learning software studio
+  industry: Education
+  location: Remote
+  start_date: 2015-07
+  end_date: 2016-06
+  employment_type: full_time
+  relationship: employment
+  is_current: false
+  technologies:
+  - Python
+  - TypeScript
+  - React
+  - PostgreSQL
+  - REST
+  summary_evidence_id: evidence.learning_senior.mentoring
+  evidence_ids:
+  - evidence.learning_senior.app-design
+  - evidence.learning_senior.web-cicd
+  - evidence.learning_senior.data-ui
+- id: learning_engineer
+  title: Software Engineer
+  company: Example Learning
+  company_anonymous: Learning software studio
+  industry: Education
+  location: Remote
+  start_date: 2014-07
+  end_date: 2015-06
+  employment_type: full_time
+  relationship: employment
+  is_current: false
+  technologies:
+  - Python
+  - TypeScript
+  - React
+  - PostgreSQL
+  - REST
+  summary_evidence_id: evidence.learning_engineer.educational-ui
+  evidence_ids:
+  - evidence.learning_engineer.reusable-ui
+  - evidence.learning_engineer.web-migration

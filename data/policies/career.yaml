@@ -1,0 +1,104 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+defaults:
+  representation: omitted
+  placement: work_history
+  identity: named
+  detail: standard
+  order: 999
+details:
+  compact:
+    include_scope: true
+    max_contributions: 1
+    max_outcomes: 1
+    max_technologies: 4
+  standard:
+    include_scope: true
+    max_contributions: 2
+    max_outcomes: 1
+    max_technologies: 6
+  extended:
+    include_scope: true
+    max_contributions: null
+    max_outcomes: null
+    max_technologies: null
+variants:
+  employment:
+    rules:
+    - match:
+        has_position: true
+      set:
+        representation: position
+        placement: work_history
+        identity: named
+        detail: extended
+        order: 1
+  contracting:
+    extends: employment
+    rules: []
+  freelance:
+    rules:
+    - match:
+        relationship: freelance_contract
+      set:
+        representation: engagement
+        placement: consultancy_engagements
+        identity: anonymous
+        detail: standard
+        order: 1
+    - match:
+        id: consulting
+      set:
+        representation: position
+        placement: prior_employment
+        identity: named
+        detail: compact
+        order: 1
+editions:
+  freelance_concise:
+    variant: freelance
+    edition: concise
+    rules: []
+  freelance_extended:
+    variant: freelance
+    edition: extended
+    rules:
+    - match:
+        relationship: freelance_contract
+      set:
+        detail: extended
+    - match:
+        id: consulting
+      set:
+        detail: standard
+    - match:
+        id: workflow
+      set:
+        representation: position
+        placement: prior_employment
+        identity: named
+        detail: compact
+        order: 2
+    - match:
+        id: services
+      set:
+        representation: position
+        placement: earlier_history
+        identity: named
+        detail: compact
+        order: 1
+    - match:
+        id: learning_senior
+      set:
+        representation: position
+        placement: earlier_history
+        identity: named
+        detail: compact
+        order: 2
+    - match:
+        id: learning_engineer
+      set:
+        representation: position
+        placement: earlier_history
+        identity: named
+        detail: compact
+        order: 3

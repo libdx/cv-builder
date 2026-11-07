@@ -1,0 +1,55 @@
+/* print.css — PDF/print optimizations (applied for screen too; harmless) */
+
+/* Page size only — NO margin here. Physical page margins are supplied by
+   PDFGenerator's pdf() margin option, which applies them to every sheet.
+   Declaring `@page { margin: 0 }` would override that option and zero all
+   margins (no side margins, no page-2 top margin). */
+@page {
+  size: A4;
+}
+
+@media print {
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cv-document > thead {
+    display: table-header-group;
+  }
+
+  .cv-document > tbody {
+    display: table-row-group;
+  }
+
+  .cv-page {
+    margin: 0;
+  }
+
+  /* The two multi-page variants deliberately start the remaining sidebar
+     sections on page 2. This fixed split mirrors the reference design and
+     keeps sidebar pagination independent of content-height calculations. */
+  .cv-employment .cv-sidebar-continuation,
+  .cv-contracting .cv-sidebar-continuation,
+  .cv-edition-extended .cv-sidebar-continuation {
+    break-before: page;
+    page-break-before: always;
+  }
+}
+
+/* Avoid awkward breaks inside a job or sidebar entry */
+.job,
+.engagement,
+.entry,
+.skill-group,
+.earlier-history-section,
+.earlier-history-list li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.section-title,
+.subsection-title {
+  break-after: avoid;
+  page-break-after: avoid;
+}

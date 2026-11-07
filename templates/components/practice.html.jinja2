@@ -1,0 +1,10 @@
+{% if practice_evidence %}
+<section class="cv-section">
+  <h2 class="section-title">AI-Native Engineering</h2>
+  <ul class="job__achievements">
+    {% for item in practice_evidence %}
+    <li>{{ item.statement }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

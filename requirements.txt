@@ -1,0 +1,22 @@
+# CV Generation System Dependencies
+
+# Core dependencies
+pyyaml==6.0.1              # YAML data parsing
+jinja2==3.1.4              # Template rendering
+pydantic==2.10.6           # Data validation (Python 3.13 compatible)
+
+# PDF generation
+playwright==1.49.1         # Headless browser for PDF generation (Python 3.13 compatible)
+
+# Editable Word generation
+python-docx==1.2.0         # Native DOCX paragraphs, tables, headers, and hyperlinks
+
+# Development dependencies
+pytest==8.3.4              # Testing framework
+pytest-cov==6.0.0          # Test coverage
+pymupdf==1.27.2.3          # PDF inspection for regression tests (page count, margins)
+black==24.10.0             # Code formatting
+mypy==1.14.1               # Type checking
+
+# Optional: Better date handling
+python-dateutil==2.9.0     # Date parsing and formatting

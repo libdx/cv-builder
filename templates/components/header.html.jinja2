@@ -1,0 +1,11 @@
+<header class="cv-header">
+  {% if photo_data_uri %}
+  <img class="cv-header__photo" src="{{ photo_data_uri }}" alt="{{ personal_info.first_name }} {{ personal_info.last_name }}">
+  {% else %}
+  <div class="cv-header__photo"></div>
+  {% endif %}
+  <div class="cv-header__identity">
+    <div class="cv-header__name"><strong>{{ personal_info.first_name }}</strong> {{ personal_info.last_name }}</div>
+    <div class="cv-header__title">{{ personal_info.title }}</div>
+  </div>
+</header>

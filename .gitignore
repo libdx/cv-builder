@@ -1,0 +1,19 @@
+# Local environments, caches, and generated documents
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.DS_Store
+output/
+tmp/
+work/
+# Private candidate content and local configuration
+data/private/
+*.local.yaml
+.env
+.env.*
+!.env.example

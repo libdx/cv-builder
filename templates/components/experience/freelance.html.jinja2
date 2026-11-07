@@ -1,0 +1,53 @@
+{% from "components/_macros.html.jinja2" import engagement_entry, job_entry %}
+<section class="cv-section consultancy-section">
+  <h2 class="section-title">Independent Consulting</h2>
+  <div class="consultancy-heading">
+    <div class="job__title">{{ consultancy.title }}</div>
+    <div class="job__meta">{{ consultancy.start_date | year }} – {{ consultancy.end_date | year }}</div>
+  </div>
+
+  {% if engagements %}
+  <h3 class="experience-subtitle">Selected Client Engagements</h3>
+  <ul class="engagement-list">
+    {% for engagement in engagements %}
+    {{ engagement_entry(engagement) }}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+
+{% if selected_experience %}
+<section class="cv-section">
+  <h2 class="section-title">Selected Experience</h2>
+  <ul class="experience-list">
+    {% for job in selected_experience %}
+    {{ job_entry(job) }}
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if prior_employment %}
+<section class="cv-section prior-employment-section">
+  <h2 class="section-title">Selected Prior Employment</h2>
+  <ul class="experience-list">
+    {% for job in prior_employment %}
+    {{ job_entry(job) }}
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if earlier_history %}
+<section class="cv-section earlier-history-section">
+  <h2 class="section-title">Earlier Software Engineering</h2>
+  <ul class="earlier-history-list">
+    {% for entry in earlier_history %}
+    <li>
+      <div class="job__title">{{ entry.company }}</div>
+      <div class="job__meta">{{ entry.start_date | year }} – {{ entry.end_date | year }} &nbsp;|&nbsp; {{ entry.titles | join(' → ') }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ personal_info.first_name }} {{ personal_info.last_name }} — {{ personal_info.title }}</title>
+  <style>
+{% include "styles/common.css" %}
+{% include "styles/layout.css" %}
+{% include "styles/print.css" %}
+  </style>
+</head>
+<body class="cv-{{ variant }}{% if edition %} cv-edition-{{ edition }}{% endif %}">
+  <div class="cv-page">
+    <table class="cv-document">
+      <thead>
+        <tr>
+          <td>
+            {% include "components/header.html.jinja2" %}
+            <hr class="rule">
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="cv-body">
+              <aside class="cv-sidebar">
+                {% include "components/sidebar.html.jinja2" %}
+              </aside>
+              <main class="cv-main">
+                {% include "components/profile.html.jinja2" %}
+                {% include "components/practice.html.jinja2" %}
+                {% block experience %}{% endblock %}
+              </main>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

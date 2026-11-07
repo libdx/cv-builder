@@ -1,0 +1,48 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+items:
+- id: practice.ai.team-delivery-flow
+  kind: workflow
+  state: verified
+  disclosure: external
+  statement: Use issue descriptions, implementation notes, and review checklists to guide
+    AI-assisted changes.
+  tags:
+  - sample
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional fixture; no real individual or internal workflow is described.
+- id: practice.ai.agent-parallelization
+  kind: workflow
+  state: verified
+  disclosure: external
+  statement: Separate independent engineering tasks into isolated Git worktrees before integration.
+  tags:
+  - sample
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional fixture; no real individual or internal workflow is described.
+- id: practice.ai.deterministic-tools
+  kind: quality
+  state: verified
+  disclosure: external
+  statement: Use executable Python checks to validate generated configuration and data changes.
+  tags:
+  - sample
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional fixture; no real individual or internal workflow is described.
+- id: practice.ai.feature-throughput
+  kind: adoption
+  state: verified
+  disclosure: private
+  statement: Fictional confidential metric used only to test disclosure restrictions.
+  tags:
+  - sample
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional fixture; no real individual or internal workflow is described.
+gaps: []

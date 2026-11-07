@@ -1,0 +1,473 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+items:
+- id: evidence.commerce.architecture-delivery
+  career_record_id: commerce
+  kind: scope
+  state: verified
+  statement: Develop Python services for an example online commerce product.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.python-backend
+  career_record_id: commerce
+  kind: contribution
+  state: verified
+  statement: Implement Django services with background jobs and database migrations.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.rest-apis
+  career_record_id: commerce
+  kind: contribution
+  state: verified
+  statement: Build versioned REST APIs for catalogue and checkout workflows.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.architecture-decisions
+  career_record_id: commerce
+  kind: responsibility
+  state: verified
+  statement: Document service boundaries and compare technical options with the team.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.cross-functional-leadership
+  career_record_id: commerce
+  kind: responsibility
+  state: verified
+  statement: Pair with frontend engineers on shared API contracts and error handling.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.product-planning
+  career_record_id: commerce
+  kind: responsibility
+  state: verified
+  statement: Break product requests into small deliverables with clear acceptance criteria.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.quality-practices
+  career_record_id: commerce
+  kind: responsibility
+  state: verified
+  statement: Add regression coverage and CI checks for critical purchase journeys.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.on-time-delivery
+  career_record_id: commerce
+  kind: outcome
+  state: candidate
+  statement: Reduced deployment lead time by an unconfirmed amount.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.commerce.funding-claim
+  career_record_id: commerce
+  kind: scope
+  state: rejected
+  statement: Example company has an unverified funding stage.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  state_reason: Unsupported fictional example; excluded from generated CVs.
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.engineering-execution
+  career_record_id: analytics
+  kind: scope
+  state: verified
+  statement: Deliver reporting features for a fictional analytics service.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.integrations
+  career_record_id: analytics
+  kind: responsibility
+  state: verified
+  statement: Build connectors that import structured reports from external APIs.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.cloud-delivery
+  career_record_id: analytics
+  kind: responsibility
+  state: verified
+  statement: Maintain container builds and automated deployment checks.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.onboarding
+  career_record_id: analytics
+  kind: outcome
+  state: verified
+  statement: Established a repeatable onboarding checklist for new team members.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.technical-design
+  career_record_id: analytics
+  kind: contribution
+  state: verified
+  statement: Design idempotent import jobs with clear failure and retry behavior.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.event-data
+  career_record_id: analytics
+  kind: contribution
+  state: verified
+  statement: Implement scheduled aggregation and reporting pipelines.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.business-scale
+  career_record_id: analytics
+  kind: outcome
+  state: candidate
+  statement: Improved customer adoption by an unconfirmed amount.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.analytics.funding-claim
+  career_record_id: analytics
+  kind: scope
+  state: rejected
+  statement: Example analytics product has an unverified funding stage.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  state_reason: Unsupported fictional example; excluded from generated CVs.
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.consulting.enterprise-software
+  career_record_id: consulting
+  kind: scope
+  state: verified
+  statement: Build Python and React applications for example consultancy projects.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.consulting.rest-apis
+  career_record_id: consulting
+  kind: contribution
+  state: verified
+  statement: Implement REST endpoints with consistent validation and pagination.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.consulting.backend-oriented-fullstack
+  career_record_id: consulting
+  kind: contribution
+  state: verified
+  statement: Deliver React forms alongside Python backend features.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.consulting.cms-automation
+  career_record_id: consulting
+  kind: contribution
+  state: verified
+  statement: Automate preview environments for content changes.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.consulting.network-layer
+  career_record_id: consulting
+  kind: contribution
+  state: verified
+  statement: Refactor API clients to isolate retries and response parsing.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.workflow.startup-product
+  career_record_id: workflow
+  kind: scope
+  state: verified
+  statement: Contribute backend and frontend features to an example workflow product.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.workflow.filtering-system
+  career_record_id: workflow
+  kind: contribution
+  state: verified
+  statement: Implement reusable filtering for workflow lists and saved searches.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.workflow.loading-cache
+  career_record_id: workflow
+  kind: contribution
+  state: verified
+  statement: Add caching to shared lookup data with explicit invalidation rules.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.services.client-requirements
+  career_record_id: services
+  kind: responsibility
+  state: verified
+  statement: Translate example client requirements into small implementation tasks.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.services.data-import
+  career_record_id: services
+  kind: contribution
+  state: verified
+  statement: Build batch import jobs with validation and actionable error reports.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.services.download-speed
+  career_record_id: services
+  kind: outcome
+  state: candidate
+  statement: Reduced import duration by an unconfirmed amount.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.services.access-control
+  career_record_id: services
+  kind: contribution
+  state: verified
+  statement: Implement role-based access controls for document workflows.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_senior.mentoring
+  career_record_id: learning_senior
+  kind: responsibility
+  state: verified
+  statement: Mentor engineers through pair programming and focused code reviews.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_senior.app-design
+  career_record_id: learning_senior
+  kind: contribution
+  state: verified
+  statement: Design lesson management features for an example learning application.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_senior.web-cicd
+  career_record_id: learning_senior
+  kind: contribution
+  state: verified
+  statement: Introduce automated checks for web application releases.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_senior.data-ui
+  career_record_id: learning_senior
+  kind: contribution
+  state: verified
+  statement: Build accessible forms and improve database query structure.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_engineer.educational-ui
+  career_record_id: learning_engineer
+  kind: scope
+  state: verified
+  statement: Develop web-based learning tools in a fictional software studio.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_engineer.reusable-ui
+  career_record_id: learning_engineer
+  kind: contribution
+  state: verified
+  statement: Create reusable TypeScript UI components and shared form validation.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+- id: evidence.learning_engineer.web-migration
+  career_record_id: learning_engineer
+  kind: contribution
+  state: verified
+  statement: Migrate legacy pages to a component-based web interface.
+  tags:
+  - sample
+  - software-engineering
+  provenance:
+  - source: fictional_sample
+    reference: docs/sample-data.md
+  verification_note: Fictional example accepted only for demonstrating the rendering lifecycle.
+gaps:
+- id: gap.commerce.product-scale
+  career_record_id: commerce
+  category: scale
+  question: What source would support a scale claim for this fictional example?
+- id: gap.commerce.performance
+  career_record_id: commerce
+  category: performance
+  question: What source would support a performance claim for this fictional example?
+- id: gap.commerce.infrastructure-cost
+  career_record_id: commerce
+  category: cost
+  question: What source would support a cost claim for this fictional example?
+- id: gap.commerce.reliability
+  career_record_id: commerce
+  category: reliability
+  question: What source would support a reliability claim for this fictional example?
+- id: gap.commerce.delivery
+  career_record_id: commerce
+  category: delivery
+  question: What source would support a delivery claim for this fictional example?
+- id: gap.analytics.integration-impact
+  career_record_id: analytics
+  category: integration
+  question: What source would support a integration claim for this fictional example?
+- id: gap.analytics.team-impact
+  career_record_id: analytics
+  category: team_impact
+  question: What source would support a team_impact claim for this fictional example?
+- id: gap.consulting.cms-delivery
+  career_record_id: consulting
+  category: delivery
+  question: What source would support a delivery claim for this fictional example?
+- id: gap.services.import-performance
+  career_record_id: services
+  category: performance
+  question: What source would support a performance claim for this fictional example?

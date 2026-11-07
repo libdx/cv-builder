@@ -1,0 +1,57 @@
+# Fictional Joe Doe sample. No real career or personal facts.
+schema_version: 1
+id: example-agent-builder
+output_id: example-agent-builder
+vacancy:
+  company: Example Company
+  role: Senior Python Engineer
+  source: https://example.com/jobs/senior-python
+  captured_at: '2026-01-15'
+target:
+  variant: contracting
+copy:
+  headline: Senior Python Engineer & AI-Assisted Development
+  profile: Senior Python Engineer building reliable APIs and data services. Uses agent-assisted
+    implementation with bounded tasks, automated checks, and human review. Experienced with
+    Python, Django, PostgreSQL, and cloud delivery.
+sidebar:
+  selection:
+    technical_skill_groups:
+    - skill-group.backend
+    - skill-group.ai-development
+    - skill-group.data
+    - skill-group.cloud-delivery
+    capabilities:
+    - capability.ai-assisted-engineering
+    - capability.backend-architecture
+    - capability.technical-leadership
+    - capability.product-delivery
+    languages:
+    - language.english
+    - language.german
+  sections:
+    skills:
+      order: 1
+    contact:
+      order: 2
+career_presentation:
+- match:
+    id: analytics
+  set:
+    detail: extended
+    order: 2
+career_evidence:
+- record_id: commerce
+  evidence_ids:
+  - evidence.commerce.architecture-decisions
+  - evidence.commerce.product-planning
+  - evidence.commerce.quality-practices
+practice_evidence_ids:
+- practice.ai.team-delivery-flow
+- practice.ai.agent-parallelization
+- practice.ai.deterministic-tools
+engagement_terms:
+  capacity: Confirm for the specific application.
+  meeting_overlap: Confirm for the specific application.
+  start_timing: Confirm for the specific application.
+  commercial_terms: Keep private unless the application asks.

@@ -1,0 +1,10 @@
+{% if interests %}
+<section class="cv-section">
+  <h2 class="section-title">Interests</h2>
+  <ul class="interest-list">
+    {% for interest in interests %}
+    <li>{{ interest }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

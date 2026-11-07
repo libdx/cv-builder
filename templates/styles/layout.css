@@ -1,0 +1,298 @@
+/* layout.css — page frame, two-column grid, and section-specific styling */
+
+.cv-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 13mm 14mm;
+  background: #ffffff;
+}
+
+/* In print/PDF the page engine supplies per-sheet margins (see PDFGenerator),
+   so drop the container padding — otherwise page 1 is double-margined and
+   page 2+ get no top margin at all. min-height becomes the printable height
+   (A4 297mm − 2×13mm vertical margin) so short variants still fill one sheet. */
+@media print {
+  .cv-page {
+    width: auto;
+    min-height: 271mm;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* A single-column table gives the print engine a native repeated header while
+   leaving the existing header and two-column body layouts unchanged. */
+.cv-document {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cv-document > thead > tr > td,
+.cv-document > tbody > tr > td {
+  padding: 0;
+  vertical-align: top;
+}
+
+/* Header: photo + name/title */
+.cv-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.cv-header__photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #ededed;
+}
+
+.cv-header__name {
+  font-size: var(--fs-name);
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-heading);
+}
+
+.cv-header__name strong {
+  font-weight: 700;
+}
+
+.cv-header__title {
+  font-size: var(--fs-title);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+/* Two-column body: sidebar + main, divided by a vertical rule */
+.cv-body {
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  column-gap: var(--space-xl);
+}
+
+.cv-sidebar {
+  border-right: 1px solid var(--color-rule);
+  padding-right: var(--space-xl);
+}
+
+.cv-section {
+  margin-bottom: var(--space-lg);
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+  word-break: break-word;
+}
+
+.contact-icon {
+  width: 13px;
+  height: 13px;
+  margin-right: var(--space-sm);
+  flex-shrink: 0;
+  fill: none;
+  stroke: var(--color-text-muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Skills */
+.skill-group {
+  margin-bottom: var(--space-md);
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-list li {
+  margin-bottom: var(--space-sm);
+}
+
+.skill-category {
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+/* Education / Languages */
+.entry {
+  margin-bottom: var(--space-md);
+}
+
+.entry__primary {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-heading);
+}
+
+.entry__secondary {
+  color: var(--color-text-muted);
+}
+
+/* Interests */
+.interest-list {
+  list-style: none;
+}
+
+.interest-list li {
+  margin-bottom: var(--space-xs);
+}
+
+/* Profile */
+.profile-text {
+  text-align: justify;
+}
+
+/* Work experience timeline */
+.experience-list {
+  list-style: none;
+}
+
+.job {
+  position: relative;
+  padding-bottom: var(--space-lg);
+}
+
+.job:last-child {
+  padding-bottom: 0;
+}
+
+/* Timeline dot sits ON the single column divider (the sidebar's right
+   border), not on a second line. Offset left by the column gap so it
+   lands on that divider, vertically aligned with the job title. */
+.job::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-xl) - 3.5px);
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-timeline);
+}
+
+.job__title {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-heading);
+}
+
+.job__meta {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.job__tech {
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.job__description {
+  margin-bottom: var(--space-xs);
+}
+
+.job__achievements {
+  list-style: none;
+}
+
+.job__achievements li {
+  position: relative;
+  padding-left: var(--space-md);
+  margin-bottom: 3px;
+}
+
+.job__achievements li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-muted);
+}
+
+.experience-subtitle {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-heading);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.consultancy-heading {
+  margin-bottom: var(--space-sm);
+}
+
+.engagement-list,
+.earlier-history-list {
+  list-style: none;
+}
+
+.engagement {
+  margin-bottom: var(--space-md);
+}
+
+.engagement:last-child {
+  margin-bottom: 0;
+}
+
+.engagement__context {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--color-heading);
+}
+
+.engagement__label {
+  display: inline;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.engagement__text {
+  display: inline;
+}
+
+.engagement__text::after {
+  content: "";
+  display: block;
+  margin-bottom: 3px;
+}
+
+.engagement__tech {
+  margin-top: 3px;
+}
+
+.engagement__items {
+  margin-bottom: 3px;
+}
+
+.engagement__item {
+  padding-left: var(--space-md);
+  text-indent: calc(-1 * var(--space-md));
+  margin-left: var(--space-md);
+}
+
+.earlier-history-list li {
+  margin-bottom: var(--space-sm);
+}
